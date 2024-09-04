@@ -1,3 +1,7 @@
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+ChatGPT was given a basic description of the algorithm to calculate the time complexity using the master theorem method to confirm the correctness of my explicitly calculated big theta. 
+
+
 # Divide and Conquer Sum
 
 In the lectures, we've covered merge sort, which uses a divide-and-conquer
@@ -25,3 +29,35 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+The complexity of the algorithm $T(n)$ ∈ $\Theta$(n $log{n}$)
+
+1. If array has 2 or less elements add them.    T(1) = 1
+2. Cut array into approximately 3 even thirds.     1
+3. Split each third recursively until reaching base case.               3T(n/3)
+4. Sum.                                                                    n
+
+$T(n)$ =  {1       for  n <= 2}
+
+$T(n)$ =  {3T(n/3) + n for  n >  2}
+
+$T(n)$ = 3T(n/3) + n
+
+$T(n)$ = 3(3T(n/3/3) + n/9) + n = 9T(n/9) + 2n
+
+$T(n)$ = 3(3(3T(n/3/3/3))n/27) + 2n = 27T(n/27) + 3n
+
+$T(n)$ = 3^i * T(n/3^i) + i * n
+
+i = $log{_3}{n}$
+
+$T(n)$ = 3^ $log{_3}{n}$ * T(n/3^ $log{_3}{n}$) + n $log{_3}{n}$
+
+T(n/3^ $log{_3}{n}$) = 1
+
+$T(n)$ = 3^ $log{_3}{n}$ * 1 + n $log{_3}{n}$
+
+$T(n)$ = n * 1 + n $log{_3}{n}$
+
+$T(n)$ = n $log{_3}{n}$ ∈ $\Theta$(n $log{n}$)
+
