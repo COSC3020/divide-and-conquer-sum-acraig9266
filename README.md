@@ -28,7 +28,7 @@ most important part. Add your answer to this markdown file.
 
 The complexity of the algorithm $T(n)$ ∈ $\Theta$(n)
 
-1. If array has 2 or less elements stop.    T(2) = 2
+1. If array has 2 or less elements add them.    T(2) = 2
 2. Cut array into approximately 3 even thirds.     1
 3. Sum each third recursively.               3T(n/3)
 
