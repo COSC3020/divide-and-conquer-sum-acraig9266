@@ -33,7 +33,7 @@ most important part. Add your answer to this markdown file.
 
 $T(n)$ =  2       for  n <= 2
 
-          3T(n/3) for  n >  2
+$T(n)$         3T(n/3) for  n >  2
 
 $T(n)$ = 3T(n/3)
 
@@ -43,7 +43,7 @@ $T(n)$ = 3(3(3T(n/3/3/3))) = 27T(n/27)
 
 $T(n)$ = 3^i * T(n/3^i)
 
-i = log3(n)
+i = $log{_3}{n}$
 
 $T(n)$ = 3^log3(n) * T(n/3^log3(n))
 
