@@ -1,3 +1,7 @@
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+ChatGPT was given a basic description of the algorithm to calculate the time complexity using the master theorem method to confirm the correctness of my explicitly calculated big theta. 
+
+
 # Divide and Conquer Sum
 
 In the lectures, we've covered merge sort, which uses a divide-and-conquer
@@ -55,6 +59,5 @@ $T(n)$ = 3^ $log{_3}{n}$ * 1 + n $log{_3}{n}$
 
 $T(n)$ = n * 1 + n $log{_3}{n}$
 
-$T(n)$ = n $log{_3}{n}$
-
+$T(n)$ = n $log{_3}{n}$ ∈ $\Theta$(n $log{n}$)
 
