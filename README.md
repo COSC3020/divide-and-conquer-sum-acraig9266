@@ -26,6 +26,7 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+The complexity of the algorithm should be $\Theta$ ∈ (n)
 
 1. If array has 2 or less elements stop.    T(2) = 2
 2. Cut array into approximately 3 even thirds.     1
@@ -55,4 +56,4 @@ $T(n)$ = n * 2
 
 $T(n)$ = 2n
 
-$\Theta$ ∈ (n)
+
