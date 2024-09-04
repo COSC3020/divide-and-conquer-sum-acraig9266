@@ -31,9 +31,9 @@ most important part. Add your answer to this markdown file.
 2. Cut array into approximately 3 even thirds.     1
 3. Sum each third recursively.               3T(n/3)
 
-          {2       for  n <= 2}
+          2       for  n <= 2
 $T(n)$ =
-          {3T(n/3) for  n >  2}
+          3T(n/3) for  n >  2
 
 $T(n)$ = 3T(n/3)
 $T(n)$ = 3(3T(n/3/3)) = 9T(n/9)
