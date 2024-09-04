@@ -27,9 +27,24 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
 
-1. If array has 2 or less elements stop.    T(1) = 1
+1. If array has 2 or less elements stop.    T(2) = 2
 2. Cut array into approximately 3 even thirds.     1
 3. Sum each third recursively.               3T(n/3)
 
-T(n) =  {1        n <= 2}
-        {3T(n/3)  n >  2}
+T(n) =  {2       for  n <= 2}
+        {3T(n/3) for  n >  2}
+
+T(n) = 3T(n/3)
+T(n) = 3(3T(n/3/3)) = 9T(n/9)
+T(n) = 3(3(3T(n/3/3/3))) = 27T(n/27)
+
+T(n) = 3^i * T(n/3^i)
+i = log3(n)
+T(n) = 3^log3(n) * T(n/3^log3(n))
+T(n/3^log3(n)) = 2
+
+T(n) = 3^log3(n) * 2
+T(n) = n * 2
+T(n) = 2n
+
+$\Theta$ ∈ (n)
