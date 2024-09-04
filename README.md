@@ -25,3 +25,11 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+
+1. If array has 2 or less elements stop.    T(1) = 1
+2. Cut array into approximately 3 even thirds.     1
+3. Sum each third recursively.               3T(n/3)
+
+T(n) = { 1        n <= 2 }
+        3T(n/3)  n >  2
