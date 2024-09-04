@@ -34,8 +34,8 @@ most important part. Add your answer to this markdown file.
 $T(n)$ =  {2       for  n <= 2}
 
 $T(n)$ =  {3T(n/3) for  n >  2}
-
-
+.
+.
 
 $T(n)$ = 3T(n/3)
 
